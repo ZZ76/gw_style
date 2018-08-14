@@ -61,24 +61,31 @@ def gw_img(img):   # for image
     img = gw.gw_filter(img, bnr, w, h)
     return bnr_lrg, bnr_lrg2, img
 
-# img
-img = cv2.imread('kim.jpg')
-ho, wo, _ = img.shape
-wn = 300
-hn = int(wn*ho/wo)
-img = cv2.resize(img, (wn, hn))
-bnr_lrg, bnr_lrg2, img = gw_img(img)
-wn2 = 400
-hn2 = int(wn2*ho/wo)
-bnr_lrg2 = cv2.resize(bnr_lrg2, (wn2, hn2))
-img = cv2.resize(img, (wn2, hn2))
 
-# random line
-#w, h = 30, 40
-#bnr_lrg, bnr_lrg2, img = gw_line(w, h, img=None)
+def read_img(img, wn=300, wn2=400):
+    ho, wo, _ = img.shape
+    hn = int(wn*ho/wo)
+    img = cv2.resize(img, (wn, hn))
+    bnr_lrg, bnr_lrg2, img = gw_img(img)
+    hn2 = int(wn2*ho/wo)
+    bnr_lrg2 = cv2.resize(bnr_lrg2, (wn2, hn2))
+    img = cv2.resize(img, (wn2, hn2))
+    return img, bnr_lrg, bnr_lrg2
 
-cv2.imshow('lrg', bnr_lrg)
-cv2.imshow('lrg2', bnr_lrg2)
-cv2.imshow('gw', img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+
+def main(img=None, bnr=None, w=30, h=40, wn=300, wn2=400):
+    if img is None:   # random line
+        bnr_lrg, bnr_lrg2, img = gw_line(w, h, img=bnr)
+    else:   # img
+        img = cv2.imread(img)
+        img, bnr_lrg, bnr_lrg2 = read_img(img, wn=wn, wn2=wn2)
+
+    cv2.imshow('lrg', bnr_lrg)
+    cv2.imshow('lrg2', bnr_lrg2)
+    cv2.imshow('gw', img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+#main()
+#main(bnr='bnr3.png')
+#main(img='')
