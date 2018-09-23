@@ -1,0 +1,5 @@
+*.wmv
+*.psd
+dt.jpg
+__pycache__/
+.idea/
