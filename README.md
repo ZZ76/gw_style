@@ -9,14 +9,14 @@ The basic generator method can create two random lines in grayscale image to sim
 
 <table>
 <tr>
-<td><img src="https://assets.aucklandartgallery.com/assets/media/2018-gordon-walters-new-vision-mobile-5.jpg" width="500px"></td>
+<td><img src="https://rfacdn.nz/artgallery/assets/media/2018-gordon-walters-new-vision-mobile-5.jpg" width="500px"></td>
 <td><img src="https://github.com/ZZ76/gw_style/blob/master/samples/gwp.png" width="500px"></td>
-<td><img src="https://github.com/ZZ76/gw_style/blob/master/bnr2.png"></td>
+<td><img src="https://github.com/ZZ76/gw_style/blob/master/bnr2.png" width="250px"></td>
 </tr>
 <tr>
 <td>Poster from Auckland art gallery</td>
-<td>An imitate one</td>
-<td>A grayscale image generated randomly. I fixed a little to make it more like the poster</td>
+<td>Generated image based on binary image</td>
+<td>The binary image</td>
 </tr>
 </table>
 
@@ -30,8 +30,8 @@ Also, the program can transfer a given grayscale image into koru style.
 </tr>
 <tr>
 <td><a href="http://www.artnet.com/artists/gordon-walters/arahura-hFBZT0kFDPAU28-76ocXJg2">Arahura by Gordon Walters</a></td>
-<td>The fake one, this result is very satisfying</td>
-<td>This grayscale image is drawn manually</td>
+<td>The fake one which looks satisfying</td>
+<td>The binary image is drawn manually</td>
 </tr>
 </table>
 
@@ -51,4 +51,5 @@ For a general image or video, they will be converted into grayscale at first.
 More intresting results
 
 ![](/samples/legoface.png)
+</br>
 ![](/samples/king.png)
