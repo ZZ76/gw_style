@@ -11,7 +11,7 @@ The basic generator method can create two random lines in grayscale image to sim
 <tr>
 <td><img src="https://rfacdn.nz/artgallery/assets/media/2018-gordon-walters-new-vision-mobile-5.jpg" width="500px"></td>
 <td><img src="https://github.com/ZZ76/gw_style/blob/master/samples/gwp.png" width="500px"></td>
-<td><img src="https://github.com/ZZ76/gw_style/blob/master/bnr2.png" width="250px"></td>
+<td><img src="https://github.com/ZZ76/gw_style/blob/master/bnr2.png" width="100px"></td>
 </tr>
 <tr>
 <td>Poster from Auckland art gallery</td>
@@ -26,7 +26,7 @@ Also, the program can transfer a given grayscale image into koru style.
 <tr>
 <td><img src="http://www.artnet.com/WebServices/images/ll00008lldRtMJFgJ7bR3CfDrCWvaHBOc7M6E/gordon-walters-arahura.jpg" width="500px"></td>
 <td><img src="https://github.com/ZZ76/gw_style/blob/master/samples/gwa.png" width="500px"></td>
-<td><img src="https://github.com/ZZ76/gw_style/blob/master/bnr1.png"></td>
+<td><img src="https://github.com/ZZ76/gw_style/blob/master/bnr1.png" width="100px"></td>
 </tr>
 <tr>
 <td><a href="http://www.artnet.com/artists/gordon-walters/arahura-hFBZT0kFDPAU28-76ocXJg2">Arahura by Gordon Walters</a></td>
